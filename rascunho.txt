@@ -1,0 +1,43 @@
+# ============================================
+# 1. IMPORTAÇÕES
+# ============================================
+
+# Variavel de ambiente
+from dotenv import load_dotenv
+import os
+import json
+
+# loaders
+from langchain_community.document_loaders import DirectoryLoader
+
+# embeddings
+# from langchain_huggingface import HuggingFaceEmbeddings
+# from langchain_ollama import OllamaEmbeddings
+
+# tokenização
+# from transformers import AutoTokenizer
+
+# spliters
+# from langchain_text_splitters import CharacterTextSplitter
+# from langchain_experimental.text_splitter import SemanticChunker
+
+# vectorstore
+# from langchain_community.vectorstores import InMemoryVectorStore, FAISS
+# from langchain_pinecone import PineconeVectorStore
+
+# LLMs
+# from langchain_ollama.llms import OllamaLLM
+from langchain_openai import ChatOpenAI
+
+# Parsers
+# from langchain_core.output_parsers import StrOutputParser
+
+# PromptTemplate
+# from langchain_core.prompts import ChatPromptTemplate
+
+# Validacao
+# from langchain_classic.evaluation.qa import QAEvalChain
+# from langchain_classic.evaluation.qa import QAGenerateChain
+
+OPENAI_API_KEY=<defina no arquivo .env>
+GPT_LLM_MODEL=gpt-4o-mini
